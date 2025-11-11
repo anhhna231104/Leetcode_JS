@@ -20,7 +20,7 @@ var threeSum = function(nums) {
             else {
                 res.push([nums[i], nums[l], nums[r]])
                 l ++
-                while (nums[l] == nums[l - 1] && l < r)
+                while (nums[l] === nums[l - 1] && l < r)
                     l ++
             }          
         }
