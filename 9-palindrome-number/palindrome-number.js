@@ -7,12 +7,7 @@ var isPalindrome = function(x) {
         return false
     }
     
-    let n = x, rev = 0
-    while(n){
-        let tmp = n % 10
-        rev = rev * 10 + tmp
-        n = parseInt(n / 10) 
-    }
-
-    return x == rev
+    let x_formatted = String(x).split('').reverse().join('')
+    
+    return x == parseInt(x_formatted)
 };
