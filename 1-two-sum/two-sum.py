@@ -6,11 +6,11 @@ class Solution(object):
         :rtype: List[int]
         """
         hashmap = {}
-        
+
         for i, num in enumerate(nums):
             comp = target - num
             if comp in hashmap:
-                return [hashmap[comp], i]
+                return [i, hashmap[comp]]
             hashmap[num] = i
         
         return hashmap
