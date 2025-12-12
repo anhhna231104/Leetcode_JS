@@ -7,17 +7,18 @@ class Solution(object):
         """
         if len(s) != len(t):
             return False
-
+        
         counterS, counterT = {}, {}
         for i in range(len(s)):
             counterS[s[i]] = 1 + counterS.get(s[i], 0)
             counterT[t[i]] = 1 + counterT.get(t[i], 0)
         
-        for c in counterS:
+        for c in s:
             if counterS[c] != counterT.get(c, 0):
                 return False
         
         return True
+
 
 
         
