@@ -8,10 +8,10 @@ class Solution(object):
             return False
         
         n = x
-        total = 0
+        rev = 0
         while n > 0:
             tmp = n % 10
-            total = total*10 + tmp
+            rev = rev*10 + tmp
             n //= 10
-
-        return x == total
+        
+        return rev == x
