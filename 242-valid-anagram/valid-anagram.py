@@ -16,8 +16,9 @@ class Solution(object):
         for c in s:
             if counterS[c] != counterT.get(c, 0):
                 return False
-        
+            
         return True
+            
 
 
 
